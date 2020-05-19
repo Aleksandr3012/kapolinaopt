@@ -6,7 +6,8 @@ mixin sSale()
 				mixin item(i)
 					.col-md-3.col-6
 						+e.A.item(href="#")
-							+pic(`sale-${i}`)
+							+e.imgWrap
+								img(src=`img/@2x/sale-${i}.jpg` alt="")
 							+e.heart
 								img.active(src="img/@2x/hearBG.png", alt="")
 								img.inActive(src="img/svg/heart.svg", alt="")

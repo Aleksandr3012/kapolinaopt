@@ -8,7 +8,8 @@ mixin sPartners()
 				mixin item(im,t,s)
 					.col-md-3.col-6
 						+e.item
-							+pic(`${im}.png`)
+							+e.imgWrap
+								img.res-i(src=`img/@2x/${im}.png` alt="")
 							.h5= t
 							p= s
 				+item('shop','Магазины и шоурумы','Поможем подобрать ассортимент')

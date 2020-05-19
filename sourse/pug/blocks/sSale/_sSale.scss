@@ -65,7 +65,7 @@
 			font-weight: 700;
 		}
 
-		&:hover picture::before {
+		&:hover .sSale__imgWrap::after {
 			opacity: 0.2;
 		}
 	}
@@ -87,12 +87,23 @@
 		}
 	}
 
-	picture {
-		position: relative;
-		&::before {
+	&__imgWrap {
+		// position: relative;
+		// display: block;
+		@include block(258,390);
+
+		img {
+			width: 100%;
+			height: 100%;
+			@include a-cent;
+
+		}
+
+		&::after {
 			content: '';
 			position: absolute;
 			width: 100%;
+			top: 0;
 			z-index: 1;
 			height: 100%;
 			background-color: #282828;
