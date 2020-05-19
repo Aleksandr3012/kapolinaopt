@@ -1,0 +1,30 @@
+mixin sBestsellers()
+	// start sBestsellers
+	+b.SECTION.sBestsellers.section#sBestsellers&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 ХИТЫ ПРОДАЖ
+			.slider--js.swiper-container
+				.swiper-wrapper
+					mixin item(im)
+						+e.item.swiper-slide.text-center
+							+e.preview
+								+e.heart
+									img.active(src="img/@2x/hearBG.png", alt="")
+									img.inActive(src="img/svg/heart.svg", alt="")
+								+e.imgWrap
+									img.res-i(src=`img/@2x/item-${im}.jpg`, alt="")
+								+e.A.details(href="#") Подробнее
+							+e.model 1298 ЧЕРНЫЙ
+							+e.descr Речь пойдет о&nbsp;белье, которое нравится мужчинам
+					+item('1')
+					+item('2')
+					+item('3')
+					+item('1')
+					+item('2')
+					+item('3')
+			.swiper-button-next
+				img(src="img/@2x/chevronR.png", alt="alt")
+			.swiper-button-prev
+				img(src="img/@2x/chevronL.png", alt="alt")
+	// end sBestsellers

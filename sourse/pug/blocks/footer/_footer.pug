@@ -1,0 +1,28 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy
+		.container
+			.row.justify-content-between
+				.col-lg-3
+					+e.A.logo(href="#")
+						+e.title KAROLINA#[span OPT]
+						.h5 качество по выгодным ценам
+					p © 2016-2020 интернет-магазин Karolinaopt
+				.col-lg.order-lg-last
+					+e.A.phone(href="tel:+8(960)803-11-61") 8 960 803-11-61
+				.col-lg
+					+e.listTitle СЕРВИС И ПОДДЕРЖКА
+					ul
+						li: a(href="#") Как сделать заказ
+						li: a(href="#") Вопросы и ответы
+						li: a(href="#") Доставка
+				.col-lg
+					+e.listTitle О КОМПАНИИ
+					ul
+						li: a(href="#") О нас
+						li: a(href="#") Контакты
+						li: a(href="#") Наши скидки
+				.col-lg
+					+e.listTitle СЛЕДУЙ ЗА НАМИ
+					+soc()
+
+

@@ -1,0 +1,17 @@
+mixin sAdvantages()
+	// start sAdvantages
+	+b.sAdvantages#sAdvantages&attributes(attributes)
+		.container
+			.row
+				mixin item(img,t)
+					.col-lg-3.col-sm-6
+						+e.item
+							img(src=`img/@2x/${img}`, alt="")
+							+e.text= t
+				+item('planet.png','Отправка по всему миру')
+				+item('warehouse.png','Всё в наличии на складе')
+				+item('hanger.png','Выкуп без размерных рядов')
+				+item('help.png','Помощь в подборе товара')
+
+
+	// end sAdvantages

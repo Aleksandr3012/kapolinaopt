@@ -1,0 +1,21 @@
+mixin sSale()
+	// start sSale
+	+b.sSale#sSale&attributes(attributes)
+		.container
+			.row.justify-content-center
+				mixin item(i)
+					.col-md-3.col-6
+						+e.A.item(href="#")
+							+pic(`sale-${i}`)
+							+e.heart
+								img.active(src="img/@2x/hearBG.png", alt="")
+								img.inActive(src="img/svg/heart.svg", alt="")
+							+e.price 499 руб
+							+e.percent 
+				+item('1')
+				+item('2')
+				+item('1')
+				+item('2')
+			+e.A.sell-out(href="#") Перейти к распродаже
+
+	// end sSale

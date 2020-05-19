@@ -1,0 +1,18 @@
+mixin sPartners()
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 С КЕМ МЫ РАБОТАЕМ
+			.row.justify-content-center.text-center
+				mixin item(im,t,s)
+					.col-md-3.col-6
+						+e.item
+							+pic(`${im}.png`)
+							.h5= t
+							p= s
+				+item('shop','Магазины и шоурумы','Поможем подобрать ассортимент')
+				+item('box','Дропшиппинг','Отправим товар до Вашего клиента')
+				+item('online','Интернет-магазины','Предоставим фото (до заказа)')
+				+item('purchase','Совместные покупки','Собираем Ваш заказ строго по заявке')
+	// end sPartners

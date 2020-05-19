@@ -1,0 +1,16 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock#headerBlock&attributes(attributes)
+		.container
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 0; x < 3; x++)
+						+e.A.slide.swiper-slide.bg-wrap(href="#")
+							img.res-i.object-fit-js(src="img/@2x/banner-2.png", alt="")
+			.swiper-button-next
+				img(src="img/@2x/chevronR.png", alt="alt")
+			.swiper-button-prev
+				img(src="img/@2x/chevronL.png", alt="alt")
+
+
+	// end headerBlock
