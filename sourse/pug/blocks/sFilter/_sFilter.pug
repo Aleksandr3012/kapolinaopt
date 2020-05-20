@@ -1,0 +1,41 @@
+mixin sFilter()
+	// start sFilter
+	+b.sFilter#sFilter&attributes(attributes)
+		.container
+			+e.row
+				.accardion-js ФИЛЬТР
+				+e.filter
+					+b.select-group.input-group
+						.custom-select-wrap
+							select.custom-select-js.form-control(name="size")
+								option(value="" selected disabled) Размер
+								option(value="75B") 75B
+								option(value="75C") 75C
+								option(value="80B") 80B
+								option(value="80C") 80C
+					+b.select-group.input-group
+						.custom-select-wrap
+							select.custom-select-js.form-control(name="size")
+								option(value="" selected disabled) ЦВЕТ
+								option(value="Красный") Красный
+								option(value="Синий") Синий
+								option(value="Розовый") Розовый
+								option(value="Черный") Черный
+								option(value="Белый") Белый
+					+b.select-group.input-group.text-primary
+						.custom-select-wrap
+							select.custom-select-js.form-control(name="size")
+								option(value="" selected disabled) Форма
+								option(value="Обычная") Обычная
+								option(value="Круживная") Круживная
+								option(value="Какая-то") Какая-то
+					+e.sorting СОРТИРОВКА:
+					+b.select-group.input-group
+						.custom-select-wrap
+							select.custom-select-js.form-control(name="size")
+								option(value="По новизне") По новизне
+								option(value="По цене") По цене
+								option(value="По популярности") По популярности
+								option(value="По популярности") Lorem ipsum dolor
+
+	// end sFilter

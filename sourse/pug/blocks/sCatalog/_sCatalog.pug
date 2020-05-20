@@ -1,0 +1,46 @@
+mixin sCatalog()
+	// start sCatalog
+	+b.sCatalog#sCatalog&attributes(attributes)
+		.container
+			.row
+				mixin catalogItem(im)
+					.col-lg-3.col-6
+						+e.item
+							+e.preview
+								+e.A.imgWrap(href="#")
+									img(src=`img/@2x/sale-${im}.jpg`, alt="")
+								+e.BUTTON.heart(type="button")
+									img.active(src="img/@2x/hearBG.png", alt="")
+									img.inActive(src="img/svg/heart.svg", alt="")
+								+e.A.details(href="#") Перейти
+							+e.body
+								+e.model КОМПЛЕКТ 1298
+								p Размеры: 75В  75С  80В  80С
+								+e.bottomBlock
+									+e.price 705 руб.
+									+e.prodAction
+										+e.BUTTON.stat(type="button")
+											img(src="img/@2x/stat.png", alt="")
+										+e.BUTTON.heartAction(type="button")
+											img.active(src="img/@2x/hearBG.png", alt="")
+											img.inActive(src="img/svg/heart-black.svg", alt="")
+										+e.BUTTON.basket(type="button")
+											img(src="img/@2x/basket-black.png", alt="")
+				+catalogItem('1')
+				+catalogItem('2')
+				+catalogItem('1')
+				+catalogItem('2')
+				+catalogItem('1')
+				+catalogItem('2')
+				+catalogItem('1')
+				+catalogItem('2')
+				+catalogItem('1')
+				+catalogItem('2')
+				+catalogItem('1')
+				+catalogItem('2')
+			+pugin()
+
+
+
+
+	// end sCatalog

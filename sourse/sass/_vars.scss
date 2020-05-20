@@ -1,7 +1,7 @@
 
 
-$em-base: 16px;
-$small: rem(13);
+$em-base: 18px;
+$small: rem(14);
 $url: '../img/';
 $path2: '@2x/';
 $path1: '@1x/';
@@ -612,8 +612,8 @@ $custom-file-text: (
 
 // // Pagination
 
-// $pagination-padding-y:              .5rem !default;
-// $pagination-padding-x:              .75rem !default;
+// $pagination-padding-y:              5rem !default;
+$pagination-padding-x:              .75rem !default;
 // $pagination-padding-y-sm:           .25rem !default;
 // $pagination-padding-x-sm:           .5rem !default;
 // $pagination-padding-y-lg:           .75rem !default;
@@ -623,17 +623,17 @@ $custom-file-text: (
 // // $pagination-color:                  $link-color !default;
 // $pagination-bg:                     $white !default;
 // // $pagination-border-width:           $border-width !default;
-// $pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           transparent !default;
 
 // // $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 // $pagination-focus-outline:          0 !default;
 
 // // $pagination-hover-color:            $link-hover-color !default;
-// $pagination-hover-bg:               $gray-200 !default;
-// $pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-bg:               transparent !default;
+$pagination-hover-border-color:     transparent !default;
 
-// // $pagination-active-color:           $component-active-color !default;
-// // $pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           $primary !default;
+$pagination-active-bg:              transparent !default;
 // // $pagination-active-border-color:    $pagination-active-bg !default;
 
 // $pagination-disabled-color:         $gray-600 !default;
@@ -861,15 +861,15 @@ $custom-file-text: (
 
 // // Breadcrumbs
 
-// $breadcrumb-padding-y:              .75rem !default;
-// $breadcrumb-padding-x:              1rem !default;
+$breadcrumb-padding-y:              calc(1vw + .45em) !default;
+$breadcrumb-padding-x:              0rem !default;
 // $breadcrumb-item-padding-x:         .5rem !default;
 
-// $breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-margin-bottom:          .2rem !default;
 
-// $breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-bg:                     transparent !default;
 // $breadcrumb-divider-color:          $gray-600 !default;
-// $breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-active-color:            $body-color !default;
 // $breadcrumb-divider:                quote("/") !default;
 
 // // $breadcrumb-border-radius:          $border-radius !default;

@@ -36,6 +36,15 @@ var sBestsellersVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sCatalogVue = new Vue({
+	el: '#sCatalog',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
 var sContactVue = new Vue({
 	el: '#sContact',
 	data: {
@@ -52,8 +61,34 @@ var sContentVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sFilterVue = new Vue({
+	el: '#sFilter',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sFormVue = new Vue({
+	el: '#sForm',
+	data: {
+		imgSRc: 'img/'
+	},
+	created: function created() {},
+	computed: {}
+});
 var sPartnersVue = new Vue({
 	el: '#sPartners',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sProdItemVue = new Vue({
+	el: '#sProdItem',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -67,14 +102,6 @@ var sSaleVue = new Vue({
 		imgSRc: 'img/'
 	},
 	methods: {},
-	created: function created() {},
-	computed: {}
-});
-var sFormVue = new Vue({
-	el: '#sForm',
-	data: {
-		imgSRc: 'img/'
-	},
 	created: function created() {},
 	computed: {}
 });

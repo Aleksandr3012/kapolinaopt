@@ -59,6 +59,22 @@ const JSCCommon = {
 
 	},
 
+	// кастомный селлект
+	select2() {
+		$(".custom-select-wrap").each(function () {
+			var th = $(this)
+			th.find('.custom-select-js').select2({
+				dropdownParent: th,
+				tags: true,
+				minimumResultsForSearch: -1,
+				// width: 'auto',
+				// width: th.find(".select2-results__options"),
+				allowClear: false,
+				// dropdownAutoWidth: true
+			});
+		})
+	},
+
 	mobileMenu() {
 		// закрыть/открыть мобильное меню
 		let _this = this;
@@ -116,9 +132,11 @@ function eventHandler() {
 
 	JSCCommon.inputMask();
 
+	JSCCommon.select2();
+
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/1.png);"></div>')
+	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/catalog.png);"></div>')
 	// /добавляет подложку для pixel perfect
 
 
@@ -170,6 +188,10 @@ function eventHandler() {
 	});
 
 	heightses();
+
+	$(".accardion-js").click(function(){
+		$(".sFilter__filter").slideToggle();
+	})
 
 	// листалка по стр
 	$(" .top-nav li a, .scroll-link").click(function () {

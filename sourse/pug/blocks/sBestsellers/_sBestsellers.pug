@@ -9,7 +9,7 @@ mixin sBestsellers()
 					mixin item(im)
 						+e.item.swiper-slide.text-center
 							+e.preview
-								+e.heart
+								+e.BUTTON.heart(type="button")
 									img.active(src="img/@2x/hearBG.png", alt="")
 									img.inActive(src="img/svg/heart.svg", alt="")
 								+e.imgWrap

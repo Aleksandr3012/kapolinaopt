@@ -1,0 +1,28 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug 
+include ../blocks/sCatalog/_sCatalog.pug 
+include ../blocks/sBestsellers/_sBestsellers.pug 
+include ../blocks/sSale/_sSale.pug 
+include ../blocks/sPartners/_sPartners.pug 
+include ../blocks/sFilter/_sFilter.pug 
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Комплекты '
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+headerBlock-catalog()
+	.container
+		+breadcrumb('Главная', title)
+	+sFilter()
+	+sCatalog()
+	+horizontalLine('', 'Нам важно завоевать Ваше доверие!')(class="bg-red text-white")
+	+footer()

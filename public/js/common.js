@@ -63,6 +63,21 @@ var JSCCommon = {
 
 		_this.body.classList.remove("fixed");
 	},
+	// кастомный селлект
+	select2: function select2() {
+		$(".custom-select-wrap").each(function () {
+			var th = $(this);
+			th.find('.custom-select-js').select2({
+				dropdownParent: th,
+				tags: true,
+				minimumResultsForSearch: -1,
+				// width: 'auto',
+				// width: th.find(".select2-results__options"),
+				allowClear: false // dropdownAutoWidth: true
+
+			});
+		});
+	},
 	mobileMenu: function mobileMenu() {
 		// закрыть/открыть мобильное меню
 		var _this = this;
@@ -112,10 +127,11 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
+	JSCCommon.inputMask();
+	JSCCommon.select2(); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/1.png);"></div>')
-	// /добавляет подложку для pixel perfect
+
+	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/catalog.png);"></div>'); // /добавляет подложку для pixel perfect
 	// const url = document.location.href;
 	// $.each($(".top-nav__nav a "), function() {
 	// 	if (this.href == url) {
@@ -152,7 +168,10 @@ function eventHandler() {
 	$(window).resize(function () {
 		heightses();
 	});
-	heightses(); // листалка по стр
+	heightses();
+	$(".accardion-js").click(function () {
+		$(".sFilter__filter").slideToggle();
+	}); // листалка по стр
 
 	$(" .top-nav li a, .scroll-link").click(function () {
 		var elementClick = $(this).attr("href");

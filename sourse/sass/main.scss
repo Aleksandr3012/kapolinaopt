@@ -38,6 +38,13 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/card";
 @import "./node_modules/bootstrap/scss/breadcrumb";
 .breadcrumb{
+  a {
+    color: #a8a8a8;
+    text-decoration: none !important;
+    &:hover {
+      color: $primary;
+    }
+  }
   .active{
     a{
       color: $breadcrumb-active-color;
@@ -48,9 +55,19 @@ $output-bourbon-deprecation-warnings: false;
 @import "./node_modules/bootstrap/scss/pagination"; 
   .pagination-wrapper ul{
     @extend .pagination;
+    text-align: center;
   }
   .pagination-wrapper li .page-numbers{ 
     @extend .page-link;
+    color: $body-color;
+  }
+  .pagination-wrapper {
+    padding-top: rem(20);
+    @include media-breakpoint-up(lg){
+      padding-top: rem(70);
+    }
+    display: flex;
+    justify-content: center;
   }
   .pagination-wrapper li{ 
     @extend .page-item;
@@ -59,6 +76,7 @@ $output-bourbon-deprecation-warnings: false;
       color: $pagination-active-color;
       background-color: $pagination-active-bg;
       border-color: $pagination-active-border-color; 
+      pointer-events: none;
     }
   }
 // @import "./node_modules/bootstrap/scss/badge";

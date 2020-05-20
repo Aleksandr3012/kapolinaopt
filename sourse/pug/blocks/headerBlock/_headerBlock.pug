@@ -6,11 +6,18 @@ mixin headerBlock()
 				.swiper-wrapper
 					- for (var x = 0; x < 3; x++)
 						+e.A.slide.swiper-slide.bg-wrap(href="#")
-							img.res-i.object-fit-js(src="img/@2x/banner-2.jpg", alt="")
+							img.res-i.object-fit-js(src="img/@2x/banner-2.png", alt="")
 			.swiper-button-next
 				img(src="img/@2x/chevronR.png", alt="alt")
 			.swiper-button-prev
 				img(src="img/@2x/chevronL.png", alt="alt")
+
+mixin headerBlock-catalog()
+	// start headerBlock
+	+b.headerBlock#headerBlock&attributes(attributes)(style="background-color: #f66b9e;")
+		.container
+			+e.slide.swiper-slide.bg-wrap
+				img.res-i.object-fit-js(src="img/@2x/banner-catalog.png", alt="бонус для Вас!")
 
 
 	// end headerBlock

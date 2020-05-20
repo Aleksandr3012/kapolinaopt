@@ -8,11 +8,10 @@ mixin sSale()
 						+e.A.item(href="#")
 							+e.imgWrap
 								img(src=`img/@2x/sale-${i}.jpg` alt="")
-							+e.heart
+							+e.BUTTON.heart(type="button")
 								img.active(src="img/@2x/hearBG.png", alt="")
 								img.inActive(src="img/svg/heart.svg", alt="")
 							+e.price 499 руб
-							+e.percent 
 				+item('1')
 				+item('2')
 				+item('1')

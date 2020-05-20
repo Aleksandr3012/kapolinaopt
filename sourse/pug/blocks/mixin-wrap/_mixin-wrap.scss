@@ -6,18 +6,21 @@
 	&__item{
 		text-decoration: none !important;
 		margin: 0 rem(5px);
+		display: block;
+		img {
+			max-width: rem(22);
+			max-height: rem(22);
+			
+		}
 		// vertical-align: middle;
 		@include mt;
-		display: block;
 		&:hover{
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			opacity: .6 ;
 		}
 		
 	}
-	.icon{
-	font-size: rem(30);
-	}
+
 	 
 	@include media-breakpoint-down(sm){
 		display: none;
