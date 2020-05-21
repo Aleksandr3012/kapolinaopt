@@ -10,7 +10,16 @@
 		}
 		padding-left: rem(7);
 		padding-right: rem(7);
+
 	}
+
+	.cardItem__details {
+		@include media-breakpoint-up(lg){
+			width: 70%;
+		}
+	}
+
+
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {
