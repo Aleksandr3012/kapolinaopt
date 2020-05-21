@@ -1,0 +1,16 @@
+mixin sWatched()
+	// start sWatched
+	+b.SECTION.sWatched.section#sWatched&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 ВЫ НЕДАВНО СМОТРЕЛИ
+			.row
+				+cardItem('1')
+				+cardItem('2')
+				+cardItem('1')
+				+cardItem('2')
+				+cardItem('1')
+				+cardItem('2')
+				+cardItem('1')
+				+cardItem('2')(class="d-lg-none")
+	// end sWatched

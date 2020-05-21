@@ -1,9 +1,94 @@
 mixin sProdItem()
 	// start sProdItem
-	+b.SECTION.sProdItem.section#sProdItem&attributes(attributes)
+	+b.sProdItem#sProdItem&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sProdItem
-				
 			.row
+				+e.col.col-lg-6
+					.row
+						+e.colSlider.col-md-9
+							.swiper-container.gallery-top
+								.swiper-wrapper
+									.swiper-slide
+										+e.img-wrap
+											a(href="img/@2x/item-2.jpg" data-fancybox="prod")
+												img.res-i(src="img/@2x/item-2.jpg" alt="")
+											+e.BUTTON.heart(type="button")
+												img.active(src="img/@2x/hearBG.png", alt="")
+												img.inActive(src="img/svg/heart.svg", alt="")
+									.swiper-slide
+										+e.img-wrap
+											a(href="img/@2x/item-2.jpg" data-fancybox="prod")
+												img.res-i(src="img/@2x/item-2.jpg" alt="")
+											+e.BUTTON.heart(type="button")
+												img.active(src="img/@2x/hearBG.png", alt="")
+												img.inActive(src="img/svg/heart.svg", alt="")
+									.swiper-slide
+										+e.img-wrap
+											a(href="img/@2x/item-2.jpg" data-fancybox="prod")
+												img.res-i(src="img/@2x/item-2.jpg" alt="")
+											+e.BUTTON.heart(type="button")
+												img.active(src="img/@2x/hearBG.png", alt="")
+												img.inActive(src="img/svg/heart.svg", alt="")
+									.swiper-slide
+										+e.img-wrap
+											a(href="img/@2x/item-2.jpg" data-fancybox="prod")
+												img.res-i(src="img/@2x/item-2.jpg" alt="")
+											+e.BUTTON.heart(type="button")
+												img.active(src="img/@2x/hearBG.png", alt="")
+												img.inActive(src="img/svg/heart.svg", alt="")
+
+						+e.colSliderSm.col-md.order-md-first
+							.swiper-container.gallery-thumbs
+								.swiper-wrapper
+									.swiper-slide
+										+e.img-wrap-sm
+											img.res-i(src="img/@2x/item-2.jpg" alt="")
+									.swiper-slide
+										+e.img-wrap-sm
+											img.res-i(src="img/@2x/item-2.jpg" alt="")
+									.swiper-slide
+										+e.img-wrap-sm
+											img.res-i(src="img/@2x/item-2.jpg" alt="")
+									.swiper-slide
+										+e.img-wrap-sm
+											img.res-i(src="img/@2x/item-2.jpg" alt="")
+						
+				.col
+					+e.info
+						.h2 Комплект 9172
+						.h2.text-primary 705 руб.
+						p Арт 9172
+							span.d-block Производитель: название
+					+e.body
+						p Выберите необходимый размер:
+						.custom-radio
+							input(type="radio" name="model" id="75В" value="75В" checked)
+							label(for="75В" ) 75В
+							input(type="radio" name="model" id="80В" value="80В") 
+							label(for="80В" ) 80В
+							input(type="radio" name="model" id="85В" value="85В") 
+							label(for="85В" ) 85В
+							input(type="radio" name="model" id="75С" value="75С") 
+							label(for="75С" ) 75С
+							input(type="radio" name="model" id="80С" value="80С") 
+							label(for="80С" ) 80С
+							input(type="radio" name="model" id="85С" value="85С") 
+							label(for="85С" ) 85С
+					+e.amount
+						p Количество:
+						+e.buttons
+							+e.quanty
+								button(type="button") -
+								input(type="number" value="1" id="quanty")
+								button(type="button") +
+							+e.BUTTON.basket(type="button") Добавить в корзину
+						p Маленькие радости, такие как новая помада, кусочек любимого торта, искрeнний комплимент от&nbsp;незнакомого человека, белье, которого сидит на тебе идеального, нужны нам, девушкам, как воздух!
+
+
+			.accardion-js Видеообзор модели
+			+e.video.filter-js
+				<iframe src="https://www.youtube.com/embed/ySb1f9zWJkQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 	// end sProdItem

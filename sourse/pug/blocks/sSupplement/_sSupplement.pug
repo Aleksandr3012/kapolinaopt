@@ -1,0 +1,44 @@
+mixin sSupplement()
+	// start sSupplement
+	+b.sSupplement#sSupplement&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 ДОПОЛНИТЬ ОБРАЗ
+			.slider--js-2.swiper-container
+				.swiper-wrapper
+					mixin supplement(im,title,price)
+						+e.supplement.swiper-slide
+							.row
+								.col-lg-6
+									+e.preview
+										+e.BUTTON.heart(type="button")
+											img.active(src="img/@2x/hearBG.png", alt="")
+											img.inActive(src="img/svg/heart.svg", alt="")
+										+e.imgWrap
+											img.res-i(src=`img/@2x/item-${im}.jpg`, alt="")
+								.col-lg
+									+e.body
+										+e.title= title
+										.h5.text-primary= price
+										+e.size
+											p Выберите размер:
+											+b.select-group.input-group
+												.custom-select-wrap
+													select.custom-select-js.form-control(name="size")
+														option(value="1" selected disabled) 1
+														option(value="75B") 75B
+														option(value="75C") 75C
+														option(value="80B") 80B
+														option(value="80C") 80C
+										+e.BUTTON.basket(type="button") В корзину
+					+supplement('1','ПОЯС ДЛЯ ЧУЛОК', '310 руб.')
+					+supplement('3','БОДИ', '705 руб.')
+					+supplement('1','ПОЯС ДЛЯ ЧУЛОК', '310 руб.')
+					+supplement('3','БОДИ', '705 руб.')
+			.swiper-button-next
+				img(src="img/@2x/chevronR.png", alt="alt")
+			.swiper-button-prev
+				img(src="img/@2x/chevronL.png", alt="alt")
+
+
+	// end sSupplement

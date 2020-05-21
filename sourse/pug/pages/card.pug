@@ -7,7 +7,10 @@ include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/sBestsellers/_sBestsellers.pug 
 include ../blocks/sSale/_sSale.pug 
 include ../blocks/sPartners/_sPartners.pug 
-include ../blocks/sFilter/_sFilter.pug 
+include ../blocks/sProdItem/_sProdItem.pug 
+include ../blocks/sSupplement/_sSupplement.pug 
+include ../blocks/sMightLike/_sMightLike.pug 
+include ../blocks/sWatched/_sWatched.pug 
 
 block variables
 	- let  mainPage= null
@@ -22,7 +25,9 @@ block pagecontent
 	//- +headerBlock-catalog()
 	.container
 		+breadcrumb('Главная', 'Комплекты', title)
-	+sFilter()
-	+sCatalog()
+	+sProdItem()
+	+sSupplement()
+	+sMightLike()
+	+sWatched()
 	+horizontalLine('', 'Нам важно завоевать Ваше доверие!')(class="bg-red text-white")
 	+footer()

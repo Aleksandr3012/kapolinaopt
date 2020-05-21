@@ -78,6 +78,15 @@ var sFormVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sMightLikeVue = new Vue({
+	el: '#sMightLike',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
 var sPartnersVue = new Vue({
 	el: '#sPartners',
 	data: {
@@ -98,6 +107,24 @@ var sProdItemVue = new Vue({
 });
 var sSaleVue = new Vue({
 	el: '#sSale',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sSupplementVue = new Vue({
+	el: '#sSupplement',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sWatchedVue = new Vue({
+	el: '#sWatched',
 	data: {
 		imgSRc: 'img/'
 	},

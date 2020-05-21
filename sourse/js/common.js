@@ -136,7 +136,7 @@ function eventHandler() {
 
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/catalog.png);"></div>')
+	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/catalog.png);"></div>')
 	// /добавляет подложку для pixel perfect
 
 
@@ -190,7 +190,7 @@ function eventHandler() {
 	heightses();
 
 	$(".accardion-js").click(function(){
-		$(".sFilter__filter").slideToggle();
+		$(".filter-js").slideToggle();
 	})
 
 	// листалка по стр
@@ -274,6 +274,72 @@ function eventHandler() {
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
+		},
+	});
+
+	const swiper7 = new Swiper('.slider--js-2', {
+		// slidesPerView: 5,
+		slidesPerView: 1,
+		watchOverflow: true,
+		spaceBetween: 10,
+		loop: true,
+		// pagination: {
+		// 	el: '.header-block__pagination',
+		// 	type: 'bullets',
+		// 	clickable: true,
+		// },
+		breakpoints: {
+			576: {
+				slidesPerView: 2,
+				spaceBetween: 15
+			}
+		},
+		lazy: {
+			loadPrevNext: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
+
+	//Prod slider
+	const galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 2,
+		slidesPerView: 3,
+		freeMode: true,
+		loop: true,
+		breakpoints: {
+			768: {
+				direction: 'vertical',
+				spaceBetween: 90,
+			},
+
+			1200: {
+				spaceBetween: 7.4,
+				direction: 'vertical',
+			}
+		},
+		// direction: 'vertical',
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		lazy: {
+			loadPrevNext: true,
+		},
+	});
+	const galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 10,
+		loop: true,
+		// navigation: {
+		// 	nextEl: '.swiper-button-next',
+		// 	prevEl: '.swiper-button-prev',
+		// },
+		thumbs: {
+			swiper: galleryThumbs
+		},
+		lazy: {
+			loadPrevNext: true,
 		},
 	});
 

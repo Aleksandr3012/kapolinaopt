@@ -116,384 +116,331 @@
 					</ol>
 				</nav>
 			</div>
-			<!-- start sFilter-->
-			<div class="sFilter" id="sFilter">
+			<!-- start sProdItem-->
+			<div class="sProdItem" id="sProdItem">
 				<div class="container">
-					<div class="sFilter__row">
-						<div class="accardion-js">ФИЛЬТР</div>
-						<div class="sFilter__filter">
-							<div class="select-group input-group">
-								<div class="custom-select-wrap">
-									<select class="custom-select-js form-control" name="size">
-										<option value="" selected="selected" disabled="disabled">Размер</option>
-										<option value="75B">75B</option>
-										<option value="75C">75C</option>
-										<option value="80B">80B</option>
-										<option value="80C">80C</option>
-									</select>
+					<div class="row">
+						<div class="sProdItem__col col-lg-6">
+							<div class="row">
+								<div class="sProdItem__colSlider col-md-9">
+									<div class="swiper-container gallery-top">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap"><a href="img/@2x/item-2.jpg" data-fancybox="prod"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/></a>
+													<button class="sProdItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+													</button>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap"><a href="img/@2x/item-2.jpg" data-fancybox="prod"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/></a>
+													<button class="sProdItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+													</button>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap"><a href="img/@2x/item-2.jpg" data-fancybox="prod"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/></a>
+													<button class="sProdItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+													</button>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap"><a href="img/@2x/item-2.jpg" data-fancybox="prod"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/></a>
+													<button class="sProdItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="select-group input-group">
-								<div class="custom-select-wrap">
-									<select class="custom-select-js form-control" name="size">
-										<option value="" selected="selected" disabled="disabled">ЦВЕТ</option>
-										<option value="Красный">Красный</option>
-										<option value="Синий">Синий</option>
-										<option value="Розовый">Розовый</option>
-										<option value="Черный">Черный</option>
-										<option value="Белый">Белый</option>
-									</select>
-								</div>
-							</div>
-							<div class="select-group input-group text-primary">
-								<div class="custom-select-wrap">
-									<select class="custom-select-js form-control" name="size">
-										<option value="" selected="selected" disabled="disabled">Форма</option>
-										<option value="Обычная">Обычная</option>
-										<option value="Круживная">Круживная</option>
-										<option value="Какая-то">Какая-то</option>
-									</select>
-								</div>
-							</div>
-							<div class="sFilter__sorting">СОРТИРОВКА:
-							</div>
-							<div class="select-group input-group">
-								<div class="custom-select-wrap">
-									<select class="custom-select-js form-control" name="size">
-										<option value="По новизне">По новизне</option>
-										<option value="По цене">По цене</option>
-										<option value="По популярности">По популярности</option>
-										<option value="По популярности">Lorem ipsum dolor</option>
-									</select>
+								<div class="sProdItem__colSliderSm col-md order-md-first">
+									<div class="swiper-container gallery-thumbs">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap-sm"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap-sm"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap-sm"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sProdItem__img-wrap-sm"><img class="res-i" src="img/@2x/item-2.jpg" alt=""/>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="col">
+							<div class="sProdItem__info">
+								<div class="h2">Комплект 9172</div>
+								<div class="h2 text-primary">705 руб.</div>
+								<p>Арт 9172<span class="d-block">Производитель: название</span></p>
+							</div>
+							<div class="sProdItem__body">
+								<p>Выберите необходимый размер:</p>
+								<div class="custom-radio">
+									<input type="radio" name="model" id="75В" value="75В" checked="checked"/>
+									<label for="75В">75В</label>
+									<input type="radio" name="model" id="80В" value="80В"/>
+									<label for="80В">80В</label>
+									<input type="radio" name="model" id="85В" value="85В"/>
+									<label for="85В">85В</label>
+									<input type="radio" name="model" id="75С" value="75С"/>
+									<label for="75С">75С</label>
+									<input type="radio" name="model" id="80С" value="80С"/>
+									<label for="80С">80С</label>
+									<input type="radio" name="model" id="85С" value="85С"/>
+									<label for="85С">85С</label>
+								</div>
+							</div>
+							<div class="sProdItem__amount">
+								<p>Количество:</p>
+								<div class="sProdItem__buttons">
+									<div class="sProdItem__quanty">
+										<button type="button">-</button>
+										<input type="number" value="1" id="quanty"/>
+										<button type="button">+</button>
+									</div>
+									<button class="sProdItem__basket" type="button">Добавить в корзину
+									</button>
+								</div>
+								<p>Маленькие радости, такие как новая помада, кусочек любимого торта, искрeнний комплимент от&nbsp;незнакомого человека, белье, которого сидит на тебе идеального, нужны нам, девушкам, как воздух!</p>
+							</div>
+						</div>
+					</div>
+					<div class="accardion-js">Видеообзор модели</div>
+					<div class="sProdItem__video filter-js"><iframe src="https://www.youtube.com/embed/ySb1f9zWJkQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
-			<!-- end sFilter-->
-			<!-- start sCatalog-->
-			<div class="sCatalog" id="sCatalog">
+			<!-- end sProdItem-->
+			<!-- start sSupplement-->
+			<div class="sSupplement" id="sSupplement">
 				<div class="container">
-					<div class="row">
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-1.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-6">
-									<div class="sCatalog__item">
-										<div class="sCatalog__preview"><a class="sCatalog__imgWrap" href="#"><img src="img/@2x/sale-2.jpg" alt=""/></a>
-											<button class="sCatalog__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
-											</button><a class="sCatalog__details" href="#">Перейти</a>
-										</div>
-										<div class="sCatalog__body">
-											<div class="sCatalog__model">КОМПЛЕКТ 1298
-											</div>
-											<p>Размеры: 75В  75С  80В  80С</p>
-											<div class="sCatalog__bottomBlock">
-												<div class="sCatalog__price">705 руб.
-												</div>
-												<div class="sCatalog__prodAction">
-													<button class="sCatalog__stat" type="button"><img src="img/@2x/stat.png" alt=""/>
-													</button>
-													<button class="sCatalog__heartAction" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart-black.svg" alt=""/>
-													</button>
-													<button class="sCatalog__basket" type="button"><img src="img/@2x/basket-black.png" alt=""/>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+					<div class="section-title text-center">
+						<h2>ДОПОЛНИТЬ ОБРАЗ</h2>
 					</div>
-					<div class="pagination-wrapper">
-						<ul class="page-numbers">
-									<li><span class="prev page-numbers"><img src="img/svg/prev.svg" alt=""/></span>
-									</li>
-									<li><span class="page-numbers current"> 1</span>
-									</li>
-									<li><a class="page-numbers" href="#">2</a>
-									</li>
-									<li><a class="page-numbers" href="#">3</a>
-									</li>
-									<li><a class="next page-numbers" href="#"><img src="img/svg/next.svg" alt=""/></a>
-									</li>
-						</ul>
+					<div class="slider--js-2 swiper-container">
+						<div class="swiper-wrapper">
+										<div class="sSupplement__supplement swiper-slide">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="sSupplement__preview">
+														<button class="sSupplement__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+														</button>
+														<div class="sSupplement__imgWrap"><img class="res-i" src="img/@2x/item-1.jpg" alt=""/>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg">
+													<div class="sSupplement__body">
+														<div class="sSupplement__title">ПОЯС ДЛЯ ЧУЛОК
+														</div>
+														<div class="h5 text-primary">310 руб.</div>
+														<div class="sSupplement__size">
+															<p>Выберите размер:</p>
+															<div class="select-group input-group">
+																<div class="custom-select-wrap">
+																	<select class="custom-select-js form-control" name="size">
+																		<option value="1" selected="selected" disabled="disabled">1</option>
+																		<option value="75B">75B</option>
+																		<option value="75C">75C</option>
+																		<option value="80B">80B</option>
+																		<option value="80C">80C</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<button class="sSupplement__basket" type="button">В корзину
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sSupplement__supplement swiper-slide">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="sSupplement__preview">
+														<button class="sSupplement__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+														</button>
+														<div class="sSupplement__imgWrap"><img class="res-i" src="img/@2x/item-3.jpg" alt=""/>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg">
+													<div class="sSupplement__body">
+														<div class="sSupplement__title">БОДИ
+														</div>
+														<div class="h5 text-primary">705 руб.</div>
+														<div class="sSupplement__size">
+															<p>Выберите размер:</p>
+															<div class="select-group input-group">
+																<div class="custom-select-wrap">
+																	<select class="custom-select-js form-control" name="size">
+																		<option value="1" selected="selected" disabled="disabled">1</option>
+																		<option value="75B">75B</option>
+																		<option value="75C">75C</option>
+																		<option value="80B">80B</option>
+																		<option value="80C">80C</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<button class="sSupplement__basket" type="button">В корзину
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sSupplement__supplement swiper-slide">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="sSupplement__preview">
+														<button class="sSupplement__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+														</button>
+														<div class="sSupplement__imgWrap"><img class="res-i" src="img/@2x/item-1.jpg" alt=""/>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg">
+													<div class="sSupplement__body">
+														<div class="sSupplement__title">ПОЯС ДЛЯ ЧУЛОК
+														</div>
+														<div class="h5 text-primary">310 руб.</div>
+														<div class="sSupplement__size">
+															<p>Выберите размер:</p>
+															<div class="select-group input-group">
+																<div class="custom-select-wrap">
+																	<select class="custom-select-js form-control" name="size">
+																		<option value="1" selected="selected" disabled="disabled">1</option>
+																		<option value="75B">75B</option>
+																		<option value="75C">75C</option>
+																		<option value="80B">80B</option>
+																		<option value="80C">80C</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<button class="sSupplement__basket" type="button">В корзину
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sSupplement__supplement swiper-slide">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="sSupplement__preview">
+														<button class="sSupplement__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+														</button>
+														<div class="sSupplement__imgWrap"><img class="res-i" src="img/@2x/item-3.jpg" alt=""/>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg">
+													<div class="sSupplement__body">
+														<div class="sSupplement__title">БОДИ
+														</div>
+														<div class="h5 text-primary">705 руб.</div>
+														<div class="sSupplement__size">
+															<p>Выберите размер:</p>
+															<div class="select-group input-group">
+																<div class="custom-select-wrap">
+																	<select class="custom-select-js form-control" name="size">
+																		<option value="1" selected="selected" disabled="disabled">1</option>
+																		<option value="75B">75B</option>
+																		<option value="75C">75C</option>
+																		<option value="80B">80B</option>
+																		<option value="80C">80C</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<button class="sSupplement__basket" type="button">В корзину
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+						</div>
 					</div>
+					<div class="swiper-button-next"><img src="img/@2x/chevronR.png" alt="alt"/></div>
+					<div class="swiper-button-prev"><img src="img/@2x/chevronL.png" alt="alt"/></div>
 				</div>
 			</div>
-			<!-- end sCatalog-->
+			<!-- end sSupplement-->
+			<!-- start sMightLike-->
+			<section class="sMightLike bg-secondary section" id="sMightLike">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>ВАМ МОГУТ ПОНРАВИТСЯ</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-6"><a class="cardItem" href="#"><span class="cardItem__preview">
+							<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+							</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+							<p>705 руб.</p></span></a>
+						</div>
+						<div class="col-lg-3 col-6"><a class="cardItem" href="#"><span class="cardItem__preview">
+							<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+							</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+							<p>705 руб.</p></span></a>
+						</div>
+						<div class="col-lg-3 col-6"><a class="cardItem" href="#"><span class="cardItem__preview">
+							<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+							</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+							<p>705 руб.</p></span></a>
+						</div>
+						<div class="col-lg-3 col-6"><a class="cardItem" href="#"><span class="cardItem__preview">
+							<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+							</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+							<p>705 руб.</p></span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sMightLike-->
+			<!-- start sWatched-->
+			<section class="sWatched section" id="sWatched">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>ВЫ НЕДАВНО СМОТРЕЛИ</h2>
+					</div>
+					<div class="row"><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-1.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a><a class="cardItem d-lg-none" href="#"><span class="cardItem__preview">
+						<button class="cardItem__heart" type="button"><img class="active" src="img/@2x/hearBG.png" alt=""/><img class="inActive" src="img/svg/heart.svg" alt=""/>
+						</button><span class="cardItem__imgWrap"><img class="res-i" src="img/@2x/sale-2.jpg" alt=""/></span><span class="cardItem__details">Перейти</span></span><span class="cardItem__descr"><strong>КОМПЛЕКТ 1298</strong>
+						<p>705 руб.</p></span></a>
+					</div>
+				</div>
+			</section>
+			<!-- end sWatched-->
 			<div class="horizontalLine bg-red text-white">
 				<div class="horizontalLine__icon">
 					<svg class="icon icon-heart ">

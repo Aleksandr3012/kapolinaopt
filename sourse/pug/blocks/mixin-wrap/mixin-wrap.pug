@@ -79,7 +79,19 @@ mixin arrow()
 		+icon('chevron-right')
 //- /arrow for swiper-slider
 		
- 
+
+mixin cardItem(im)
+	+b.A.cardItem(href="#")&attributes(attributes)
+		+e.preview
+			+e.BUTTON.heart(type="button")
+				img.active(src="img/@2x/hearBG.png", alt="")
+				img.inActive(src="img/svg/heart.svg", alt="")
+			+e.imgWrap
+				img.res-i(src=`img/@2x/sale-${im}.jpg`, alt="")
+			+e.details Перейти
+		+e.descr
+			strong КОМПЛЕКТ 1298
+			p 705 руб.
 
 //- scial buttons
 mixin soc()
