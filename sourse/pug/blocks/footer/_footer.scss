@@ -3,7 +3,7 @@
 	padding-bottom: rem(30);
 	@include media-breakpoint-up(lg) {
 		padding-top: rem(37);
-		padding-bottom: rem(70);
+		padding-bottom: rem(50);
 	}
 
 	p {
@@ -21,13 +21,25 @@
 		&:hover {
 			text-decoration: none;
 		}
+
+		.h5 {
+			color: $body-color;
+			letter-spacing: rem(1.1px);
+			@include media-breakpoint-only(lg) {
+				font-size: rem(17);
+			letter-spacing: rem(0.9px);
+
+			}
+		}
 	}
 
-	
 	&__title {
-		// font-family: Jura;
-		letter-spacing: rem(1.03px);
-		font-size: rem(44);
+		font-family: Jura;
+		letter-spacing: rem(0.1px);
+		@include media-breakpoint-only(lg){
+			font-size: rem(35);
+		}
+		font-size: rem(42);
 		color: $body-color;
 		display: block;
 		line-height: 1;
@@ -40,6 +52,7 @@
 		@extend .h5;
 		font-weight: 700;
 		margin-bottom: rem(20);
+
 	}
 
 	li {
@@ -57,8 +70,13 @@
 	&__phone {
 		@extend .h3;
 		letter-spacing: rem(1.4px);
+		margin-bottom: rem(15);
+		display: block;
 		color: $body-color;
 		text-decoration: none !important;
+		@include media-breakpoint-only(lg){
+			font-size: rem(25);
+		}
 	}
 
 	@include media-breakpoint-up(xl) {

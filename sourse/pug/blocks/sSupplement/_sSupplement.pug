@@ -11,7 +11,7 @@ mixin sSupplement()
 							.row
 								.col-lg-6
 									+e.preview
-										+e.BUTTON.heart(type="button")
+										+e.heart
 											img.active(src="img/@2x/hearBG.png", alt="")
 											img.inActive(src="img/svg/heart.svg", alt="")
 										+e.imgWrap
@@ -25,7 +25,6 @@ mixin sSupplement()
 											+b.select-group.input-group
 												.custom-select-wrap
 													select.custom-select-js.form-control(name="size")
-														option(value="1" selected disabled) 1
 														option(value="75B") 75B
 														option(value="75C") 75C
 														option(value="80B") 80B
@@ -36,9 +35,9 @@ mixin sSupplement()
 					+supplement('1','ПОЯС ДЛЯ ЧУЛОК', '310 руб.')
 					+supplement('3','БОДИ', '705 руб.')
 			.swiper-button-next
-				img(src="img/@2x/chevronR.png", alt="alt")
+				img(src="img/svg/chevronR.svg", alt="alt")
 			.swiper-button-prev
-				img(src="img/@2x/chevronL.png", alt="alt")
+				img(src="img/svg/chevronL.svg", alt="alt")
 
 
 	// end sSupplement

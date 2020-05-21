@@ -1,7 +1,10 @@
 // start .sSupplement
 .sSupplement {
 	padding-top: rem(28);
-	padding-bottom: rem(39);
+	padding-bottom: rem(17);
+	@include media-breakpoint-up(lg){
+		padding-bottom: rem(39);
+	}
 	.container {
 		position: relative;
 	}
@@ -49,18 +52,20 @@
 		right: rem(35);
 		top: rem(25);
 		border: none;
+		cursor: pointer;
 		background-color: transparent;
 		@include mt;
 
 		img {
-			@include a-cent;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
 		.active {
 			opacity: 0;
-		}
-
-		.active {
+			top: 2px;
+			right: 1px;
 			@include mt;
 		}
 
@@ -90,6 +95,11 @@
 			background-image: url('../img/svg/arrow-bottom-light.svg');
 		}
 	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		padding-bottom: 1px;
+	}
+
 
 	.select2-container--default {
 		max-width: rem(160) !important;
@@ -125,7 +135,7 @@
 		margin-top: rem(20);
 		@include media-breakpoint-up(lg){
 			margin-top: auto;
-			padding: rem(10);
+			padding: rem(10) rem(10) rem(13);
 			width: rem(156);
 		}
 		max-width: rem(160);

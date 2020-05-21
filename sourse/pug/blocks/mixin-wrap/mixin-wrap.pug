@@ -81,9 +81,9 @@ mixin arrow()
 		
 
 mixin cardItem(im)
-	+b.A.cardItem(href="#")&attributes(attributes)
-		+e.preview
-			+e.BUTTON.heart(type="button")
+	+b.cardItem&attributes(attributes)
+		+e.A.preview(href="#")
+			+e.heart
 				img.active(src="img/@2x/hearBG.png", alt="")
 				img.inActive(src="img/svg/heart.svg", alt="")
 			+e.imgWrap
@@ -100,13 +100,13 @@ mixin soc()
 			+e.A.item(href="№" target="_blank")
 				block
 		+item()
-			img(src="img/@2x/whatsapp.png")
+			img(src="img/@2x/whatsapp.png" alt="")
 		
 		+item()
-			img(src="img/@2x/inst.png")
+			img(src="img/@2x/inst.png" alt="")
 		
 		+item()
-			img(src="img/@2x/vk.png")
+			img(src="img/@2x/vk.png" alt="")
 //- /scial buttons
 //- WP menu
 //- mixin mnu()

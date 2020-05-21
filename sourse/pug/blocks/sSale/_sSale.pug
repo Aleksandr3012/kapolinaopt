@@ -5,13 +5,13 @@ mixin sSale()
 			.row.justify-content-center
 				mixin item(i)
 					.col-md-3.col-6
-						+e.A.item(href="#")
-							+e.imgWrap
+						+e.item
+							+e.imgWrap(href="#")
 								img(src=`img/@2x/sale-${i}.jpg` alt="")
-							+e.BUTTON.heart(type="button")
+								+e.price 499 руб
+							+e.heart
 								img.active(src="img/@2x/hearBG.png", alt="")
 								img.inActive(src="img/svg/heart.svg", alt="")
-							+e.price 499 руб
 				+item('1')
 				+item('2')
 				+item('1')

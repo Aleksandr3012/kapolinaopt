@@ -1,11 +1,12 @@
 
 $default-font: "Akrobat";
+$default-font2: "Jura";
 // $file-form: ($file-formats: woff2 woff ttf);
 $addr: '../fonts/';
 $file-format: woff2 woff;
 
 // @include font-face ($default-font, $addr + "AlexandraZeferinoOne/AlexandraZeferinoOne", $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Jura-Light/Jura-Light", 300, $file-formats: $file-format);
+@include font-face ($default-font2, $addr + "Jura-Light/Jura-Light", 300, $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Akrobat-Regular/Akrobat-Regular", $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Akrobat-SemiBold/Akrobat-SemiBold", 600, $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Akrobat-Bold/Akrobat-Bold", bold, $file-formats: $file-format);

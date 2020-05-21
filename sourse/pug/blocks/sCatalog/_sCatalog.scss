@@ -40,6 +40,10 @@
 
 	&__basket {
 		padding-right: 0;
+		img {
+			width: rem(21);
+			height: rem(19);
+		}
 	}
 
 	&__heart {
@@ -48,20 +52,24 @@
 		right: rem(27);
 		top: rem(25);
 		border: none;
+		cursor: pointer;
 		background-color: transparent;
 		@include mt;
 
 		img {
-			@include a-cent;
+			
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
 		.active {
 			opacity: 0;
-		}
-
-		.active {
+			top: 2px;
+			right: 1px;
 			@include mt;
 		}
+		
 
 		&:hover,
 		&:active {
@@ -79,6 +87,8 @@
 	button {
 		background-color: transparent;
 		border: none;
+		outline: none;
+
 	}
 
 	&__prodAction {
@@ -89,17 +99,24 @@
 		position: relative;
 		display: block;
 		margin: 0 rem(5);
+
 		img {
-			@include a-cent(x);
-			top: 20%;
+			position: absolute;
+			right: -40%;
+			top: 25%;
+			@include mt;
 		}
 
 		.active {
+			top: 27%;
+			right: -30%;
 			opacity: 0;
+			@include mt;
 		}
 
 		&:hover,
 		&:active {
+			@include mt;
 			.active {
 				opacity: 1;
 			}
@@ -152,10 +169,11 @@
 		color: #fff;
 		padding: rem(5) rem(10);
 		@include media-breakpoint-up(lg) {
-			padding: rem(13);
+			padding: rem(13) rem(13) rem(16);
 			width: rem(150);
 		}
 		background-color: $primary;
+		border: solid 1px $primary;
 		border-radius: rem(50);
 		// text-align: center;
 		opacity: 0;

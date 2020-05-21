@@ -7,9 +7,9 @@ mixin sCatalog()
 					.col-lg-3.col-6
 						+e.item
 							+e.preview
-								+e.A.imgWrap(href="#")
+								+e.imgWrap
 									img(src=`img/@2x/sale-${im}.jpg`, alt="")
-								+e.BUTTON.heart(type="button")
+								+e.heart
 									img.active(src="img/@2x/hearBG.png", alt="")
 									img.inActive(src="img/svg/heart.svg", alt="")
 								+e.A.details(href="#") Перейти

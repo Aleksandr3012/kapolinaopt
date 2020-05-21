@@ -8,11 +8,14 @@
 		right: rem(27);
 		top: rem(25);
 		border: none;
+		cursor: pointer;
 		background-color: transparent;
 		@include mt;
 
 		img {
-			@include a-cent;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
 		.active {
@@ -20,6 +23,8 @@
 		}
 
 		.active {
+			top: 2px;
+			right: 1px;
 			@include mt;
 		}
 
@@ -43,7 +48,7 @@
 		color: #fff;
 		padding: rem(5) rem(10);
 		@include media-breakpoint-up(lg) {
-			padding: rem(13);
+			padding: rem(13) rem(13) rem(16);
 		}
 		width: 55%;
 		border: solid 1px $primary;
