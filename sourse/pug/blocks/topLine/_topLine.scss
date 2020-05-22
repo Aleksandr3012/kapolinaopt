@@ -52,7 +52,7 @@
 	}
 
 	
-	&:not(:focus).form-control {
+	.form-control:not(:focus) {
 		box-shadow: none;
 	}
 
