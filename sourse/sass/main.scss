@@ -1,5 +1,6 @@
 $output-bourbon-deprecation-warnings: false;
 // @import "mq";
+// @import "bootstrap.min";
 @import "bourbon/app/assets/stylesheets/bourbon";
 // @import "../../node_modules/rfs/scss";
  
@@ -110,7 +111,6 @@ $output-bourbon-deprecation-warnings: false;
 // @import "../libs/gijgo-master/dist/combined/css/gijgo";
 // @import "../libs/gijgo-master/dist/combined/css/demo.min";
  
-// @import "../libs/ion.rangeSlider/css/ion.rangeSlider.min.css";
 
 @import "base"; 
 @import '../pug/blocks/**/*.scss';

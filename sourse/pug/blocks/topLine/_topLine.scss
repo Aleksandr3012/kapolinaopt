@@ -51,6 +51,11 @@
 		}
 	}
 
+	
+	&:not(:focus).form-control {
+		box-shadow: none;
+	}
+
 	&__input {
 		background-image: url('../img/svg/search.svg');
 		background-repeat: no-repeat;
@@ -75,6 +80,7 @@
 			}
 			background-position: 95% center;
 			margin-right: rem(5);
+			border-color: $primary;
 		}
 	}
 

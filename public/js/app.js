@@ -18,8 +18,8 @@ var headerBlockVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sBestsellersVue = new Vue({
-	el: '#sBestsellers',
+var sAdvantagesVue = new Vue({
+	el: '#sAdvantages',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -27,8 +27,8 @@ var sBestsellersVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sAdvantagesVue = new Vue({
-	el: '#sAdvantages',
+var sBestsellersVue = new Vue({
+	el: '#sBestsellers',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -70,6 +70,14 @@ var sFilterVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sFormVue = new Vue({
+	el: '#sForm',
+	data: {
+		imgSRc: 'img/'
+	},
+	created: function created() {},
+	computed: {}
+});
 var sMightLikeVue = new Vue({
 	el: '#sMightLike',
 	data: {
@@ -88,26 +96,17 @@ var sPartnersVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sSaleVue = new Vue({
-	el: '#sSale',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
-	created: function created() {},
-	computed: {}
-});
-var sSupplementVue = new Vue({
-	el: '#sSupplement',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
-	created: function created() {},
-	computed: {}
-});
 var sProdItemVue = new Vue({
 	el: '#sProdItem',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sSaleVue = new Vue({
+	el: '#sSale',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -124,16 +123,17 @@ var sWatchedVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var topLineVue = new Vue({
-	el: '#topLine',
+var sSupplementVue = new Vue({
+	el: '#sSupplement',
 	data: {
 		imgSRc: 'img/'
 	},
+	methods: {},
 	created: function created() {},
 	computed: {}
 });
-var sFormVue = new Vue({
-	el: '#sForm',
+var topLineVue = new Vue({
+	el: '#topLine',
 	data: {
 		imgSRc: 'img/'
 	},
