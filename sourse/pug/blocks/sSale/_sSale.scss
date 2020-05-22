@@ -38,31 +38,6 @@
 		text-decoration: none !important;
 		display: block;
 
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			@include triangle(67px 67px, $primary transparent, up-left);
-			z-index: 2;
-		}
-
-		&::after {
-			content: '';
-			background-image: url('../img/@2x/trazadoWhite.png');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: rem(20);
-			color: $primary;
-			width: rem(20);
-			height: rem(20);
-			position: absolute;
-			z-index: 3;
-			left: rem(10);
-			top: rem(10);
-			font-weight: 700;
-		}
-
 		&:hover .sSale__imgWrap::after {
 			opacity: 0.2;
 		}
@@ -211,3 +186,31 @@
 	@include media-breakpoint-down(xs) {
 	}
 } // end.sSale
+
+.triangle-percent {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include triangle(67px 67px, $primary transparent, up-left);
+		z-index: 2;
+	}
+
+	&::after {
+		content: '';
+		background-image: url('../img/@2x/trazadoWhite.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: rem(20);
+		color: $primary;
+		width: rem(20);
+		height: rem(20);
+		position: absolute;
+		z-index: 3;
+		left: rem(10);
+		top: rem(10);
+		font-weight: 700;
+	}
+}

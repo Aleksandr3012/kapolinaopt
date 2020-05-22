@@ -70,14 +70,6 @@ var sFilterVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sFormVue = new Vue({
-	el: '#sForm',
-	data: {
-		imgSRc: 'img/'
-	},
-	created: function created() {},
-	computed: {}
-});
 var sMightLikeVue = new Vue({
 	el: '#sMightLike',
 	data: {
@@ -89,15 +81,6 @@ var sMightLikeVue = new Vue({
 });
 var sPartnersVue = new Vue({
 	el: '#sPartners',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
-	created: function created() {},
-	computed: {}
-});
-var sProdItemVue = new Vue({
-	el: '#sProdItem',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -123,6 +106,15 @@ var sSupplementVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sProdItemVue = new Vue({
+	el: '#sProdItem',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
 var sWatchedVue = new Vue({
 	el: '#sWatched',
 	data: {
@@ -134,6 +126,14 @@ var sWatchedVue = new Vue({
 });
 var topLineVue = new Vue({
 	el: '#topLine',
+	data: {
+		imgSRc: 'img/'
+	},
+	created: function created() {},
+	computed: {}
+});
+var sFormVue = new Vue({
+	el: '#sForm',
 	data: {
 		imgSRc: 'img/'
 	},

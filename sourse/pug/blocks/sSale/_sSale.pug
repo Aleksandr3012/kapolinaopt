@@ -5,7 +5,7 @@ mixin sSale()
 			.row.justify-content-center
 				mixin item(i)
 					.col-md-3.col-6
-						+e.item
+						+e.item.triangle-percent
 							+e.imgWrap(href="#")
 								img(src=`img/@2x/sale-${i}.jpg` alt="")
 								+e.price 499 руб

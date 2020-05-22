@@ -36,6 +36,10 @@
 
 	&__stat {
 		padding-left: 0;
+		img {
+			width: rem(20);
+			height: rem(20);
+		}
 	}
 
 	&__basket {
