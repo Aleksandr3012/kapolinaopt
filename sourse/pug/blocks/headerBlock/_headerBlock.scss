@@ -1,6 +1,6 @@
 // start .headerBlock
 .headerBlock {
-	padding-top: rem(10);
+	// padding-top: rem(10);
 	@include media-breakpoint-up(lg){
 		// padding-top: rem(49);
 	}
@@ -11,19 +11,19 @@
 	}
 
 	.swiper-button-next {
-		@include media-breakpoint-up(lg) {
-			right: rem(-15);
-		}
+		// @include media-breakpoint-up(lg) {
+		// 	right: rem(-15);
+		// }
 	}
 
 	.swiper-button-prev {
-		@include media-breakpoint-up(lg) {
-			left: rem(-15);
-		}
+		// @include media-breakpoint-up(lg) {
+		// 	left: rem(-15);
+		// }
 	}
 
 	.swiper-button-next, .swiper-button-prev {
-		top: 46%;
+		top: -15vw;
 
 	}
 

@@ -114,8 +114,8 @@ var sSaleVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sWatchedVue = new Vue({
-	el: '#sWatched',
+var sSupplementVue = new Vue({
+	el: '#sSupplement',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -123,8 +123,8 @@ var sWatchedVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sSupplementVue = new Vue({
-	el: '#sSupplement',
+var sWatchedVue = new Vue({
+	el: '#sWatched',
 	data: {
 		imgSRc: 'img/'
 	},
