@@ -1,8 +1,6 @@
 // start .topLine
 .topLine {
-	@include media-breakpoint-up(lg) {
-		padding-top: rem(47);
-	}
+	padding-top: rem(47);
 	padding-bottom: rem(24);
 	border-bottom: solid 1px #ebe6e8;
 
@@ -11,6 +9,7 @@
 		color: $body-color;
 		margin-bottom: 0;
 		letter-spacing: rem(1.3);
+		flex-shrink: 0;
 		line-height: 1;
 		text-decoration: none !important;
 	}
@@ -29,7 +28,10 @@
 
 	&__logo {
 		display: block;
-		max-width: rem(260);
+		@include media-breakpoint-up(lg) {
+			max-width: rem(260);
+		}
+		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		&:hover {
@@ -51,7 +53,6 @@
 		}
 	}
 
-	
 	.form-control:not(:focus) {
 		box-shadow: none;
 	}

@@ -1,5 +1,11 @@
 "use strict";
 
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var $ = jQuery;
@@ -242,10 +248,11 @@ function eventHandler() {
 	});
 	var swiper7 = new Swiper('.slider--js-2', {
 		// slidesPerView: 5,
-		slidesPerView: 1,
+		slidesPerView: 2,
 		watchOverflow: true,
 		spaceBetween: 10,
 		loop: true,
+		slidesPerGroup: 2,
 		// pagination: {
 		// 	el: '.header-block__pagination',
 		// 	type: 'bullets',
@@ -253,7 +260,7 @@ function eventHandler() {
 		// },
 		breakpoints: {
 			576: {
-				slidesPerView: 2,
+				// slidesPerView: 2,
 				spaceBetween: 15
 			}
 		},
@@ -287,7 +294,59 @@ function eventHandler() {
 		lazy: {
 			loadPrevNext: true
 		}
-	});
+	}); //Прилипающая шапка
+
+	var navOffset = $('.top-nav').offset().top;
+	$(window).scroll(function () {
+		var scrolled = $(this).scrollTop();
+
+		if (scrolled > navOffset) {
+			$('.top-nav').addClass('nav-fixed');
+		} else if (scrolled < navOffset) {
+			$('.top-nav').removeClass('nav-fixed');
+		}
+	}); // zoom img js-image-zoom
+
+	var imgZoomImages = document.querySelectorAll('.zoom-img-js');
+
+	var _iterator = _createForOfIteratorHelper(imgZoomImages),
+			_step;
+
+	try {
+		for (_iterator.s(); !(_step = _iterator.n()).done;) {
+			var imgItem = _step.value;
+			$(imgItem).mlens({
+				imgSrc: $(imgItem).attr("data-big"),
+				// path of the hi-res version of the image
+				imgSrc2x: $(imgItem).attr("data-big2x"),
+				// path of the hi-res @2x version of the image
+				//for retina displays (optional)
+				lensShape: "square",
+				// shape of the lens (circle/square)
+				lensSize: ["200%", "200%"],
+				// lens dimensions (in px or in % with respect to image dimensions)
+				// can be different for X and Y dimension
+				borderSize: 1,
+				// size of the lens border (in px)
+				borderColor: "transparent",
+				// color of the lens border (#hex)
+				borderRadius: 0,
+				// border radius (optional, only if the shape is square)
+				//imgOverlay: $("#gear").attr("data-overlay"), // path of the overlay image (optional)
+				overlayAdapt: true,
+				// true if the overlay image has to adapt to the lens size (boolean)
+				zoomLevel: 3,
+				// zoom level multiplicator (number)
+				responsive: true // true if mlens has to be responsive (boolean)
+
+			});
+		}
+	} catch (err) {
+		_iterator.e(err);
+	} finally {
+		_iterator.f();
+	}
+
 	var galleryTop = new Swiper('.gallery-top', {
 		spaceBetween: 10,
 		loop: true,

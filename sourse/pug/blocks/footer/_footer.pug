@@ -2,7 +2,7 @@ mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
 			.row.justify-content-between
-				.col-lg-3
+				.col-lg
 					+e.A.logo(href="#")
 						+e.title KAROLINA#[span OPT]
 						.h5 качество&nbsp;по&nbsp;выгодным&nbsp;ценам
@@ -10,7 +10,7 @@ mixin footer()
 				.col-lg.order-lg-last
 					+e.A.phone(href="tel:+8(960)803-11-61") 8&nbsp;960&nbsp;803&#8209;11&#8209;61
 				.col-lg
-					+e.listTitle СЕРВИС&nbsp;И&nbsp;ПОДДЕРЖКА
+					+e.listTitle--lg СЕРВИС&nbsp;И&nbsp;ПОДДЕРЖКА
 					ul
 						li: a(href="#") Как сделать заказ
 						li: a(href="#") Вопросы и ответы

@@ -30,6 +30,7 @@
 	}
 
 	.accardion-js {
+		text-transform: uppercase;
 		color: #a8a8a8;
 		font-weight: 300;
 		text-transform: uppercase;
@@ -50,7 +51,7 @@
 			margin-right: -3em;
 		}
 		@include media-breakpoint-up(xl) {
-			margin-right: -5.5em;
+			margin-right: -4em;
 		}
 		position: relative;
 		z-index: 5;

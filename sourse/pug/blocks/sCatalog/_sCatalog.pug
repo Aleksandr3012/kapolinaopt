@@ -6,7 +6,7 @@ mixin sCatalog()
 				mixin catalogItem(im)
 					.col-lg-3.col-6
 						+e.item
-							+e.preview
+							+e.preview&attributes(attributes)
 								+e.imgWrap
 									img(src=`img/@2x/sale-${im}.jpg`, alt="")
 								+e.heart
@@ -26,9 +26,9 @@ mixin sCatalog()
 											img.inActive(src="img/svg/heart-black.svg", alt="")
 										+e.BUTTON.basket(type="button")
 											img(src="img/@2x/basket-black.png", alt="")
-				+catalogItem('1')
-				+catalogItem('2')
-				+catalogItem('1')
+				+catalogItem('1')(class="newPosition")
+				+catalogItem('2')(class="salesHit")
+				+catalogItem('1')(class="stockItem")
 				+catalogItem('2')
 				+catalogItem('1')
 				+catalogItem('2')

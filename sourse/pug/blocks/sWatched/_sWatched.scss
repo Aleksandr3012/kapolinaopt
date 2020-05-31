@@ -19,6 +19,12 @@
 		}
 	}
 
+	.row {
+		&::before, &::after {
+			display: none;
+		}
+	}
+
 
 	@include media-breakpoint-up(xl) {
 	}

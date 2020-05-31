@@ -22,16 +22,16 @@ mixin breadcrumb(...items)
 						meta(itemprop="position" content= (i + 1) )
 
 
-		
+
 //- pugination
 mixin pugin()
 	//- nav(aria-label='...')
 	//- 	ul.pagination.justify-content-center
 	//- 		li.page-item.disabled
-	//- 			a.page-link(href='#', tabindex='-1') 
+	//- 			a.page-link(href='#' tabindex='-1') 
 	//- 				i(class="fas fa-chevron-left")
 	//- 		li.page-item.disabled
-	//- 			a.page-link.d-none.d-md-block(href='#', tabindex='-1') Назад
+	//- 			a.page-link.d-none.d-md-block(href='#' tabindex='-1') Назад
 
 	//- 		li.page-item
 	//- 			a.page-link(href='#') 1
@@ -59,14 +59,14 @@ mixin pugin()
 						block
 			+li()
 				span.prev.page-numbers( )
-					img(src="img/svg/prev.svg", alt="")
+					img(src="img/svg/prev.svg" alt="")
 			+li()
 				span.page-numbers.current  1
 			- for (var x = 2; x < 4; x++)
 				+li(x)
 			+li()
 				a.next.page-numbers(href='#')
-					img(src="img/svg/next.svg", alt="")
+					img(src="img/svg/next.svg" alt="")
 
 //- +pugin()
 //- /pugination
@@ -78,14 +78,14 @@ mixin arrow()
 	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
 		+icon('chevron-right')
 //- /arrow for swiper-slider
-		
+
 
 mixin cardItem(im)
 	+b.cardItem&attributes(attributes)
 		+e.A.preview(href="#")
 			+e.heart
-				img.active(src="img/@2x/hearBG.png", alt="")
-				img.inActive(src="img/svg/heart.svg", alt="")
+				img.active(src="img/@2x/hearBG.png" alt="")
+				img.inActive(src="img/svg/heart.svg" alt="")
 			+e.imgWrap
 				img.res-i(src=`img/@2x/sale-${im}.jpg`, alt="")
 			+e.details Перейти
@@ -101,10 +101,10 @@ mixin soc()
 				block
 		+item()
 			img(src="img/@2x/whatsapp.png" alt="")
-		
+
 		+item()
 			img(src="img/@2x/inst.png" alt="")
-		
+
 		+item()
 			img(src="img/@2x/vk.png" alt="")
 //- /scial buttons
@@ -137,24 +137,45 @@ mixin soc()
 
 //- menu
 mixin mnu()
-	-
-		var nav= {
-			"Комплекты":"/",
-			"Купальники":"#",
-			"Домашняя одежда":"#",
-			"Бюстгальтеры":"#",
-			"Боди и пояса":"#",
-			"Sale":"#"
-			}
-	+e.UL.nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
-		each linkPatch, linkName in nav
-			+e.LI.item( itemprop="item" ): +e.A.link(href= linkPatch  itemprop="url")= linkName
+	//- -
+	//- 	var nav= {
+	//- 		"Комплекты":"/",
+	//- 		"Купальники":"#",
+	//- 		"Домашняя одежда":"#",
+	//- 		"Бюстгальтеры":"#",
+	//- 		"Боди и пояса":"#",
+	//- 		"Sale":"#"
+	//- 		}
+	+e.UL.nav
+		+e.LI.item(itemprop="item")
+			+e.link(href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=88") БЮСТЬЕ
+		+e.LI.item(itemprop="item")
+			+e.link(href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=82") ДОМАШНЯЯ ОДЕЖДА
+		+e.LI.item(itemprop="item")
+			+e.link(href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=92") КУПАЛЬНИКИ
+		<li class="dropdown">
+			<a href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=91" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">БОДИ И ПОЯСА</a>
+		<div class="dropdown-menu">
+			<div class="dropdown-inner">
+				<ul class="list-unstyled">
+					<li>
+						<a href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=91_112">Подкатегория (0)</a>
+					</li>
+				</ul>
+			</div>
+			<a href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=91" class="see-all">Смотреть Все БОДИ И ПОЯСА</a> 
+			</div>
+			</li>
+		+e.LI.item(itemprop="item")
+			+e.link(href="http://karolina.alekslv.in.net/index.php?route=product/category&amp;path=89") КОМПЛЕКТЫ И бРА
+		+e.LI.item(itemprop="item")
+			+e.link(href="http://karolina.alekslv.in.net/index.php?route=product/special") Sale
 //- /menu
 
 
 
 
-mixin pic(i, bg, lazy="lazy", media='576px')
+mixin pic(i, bg, lazy="lazy" media='576px')
 	-
 		const smpath2 = "2x"
 		const smpath1 = "1x"
@@ -171,7 +192,7 @@ mixin pic(i, bg, lazy="lazy", media='576px')
 			source( srcset=src data-srcset= data  type=`image/${exp}`   )&attributes(attributes)
 		else
 			img(src=src data-src=data, class=(bg=="bg" ? "object-fit-js": null ) alt="")&attributes(attributes)
-	
+
 	// picture
 	picture( class= lazy)&attributes(attributes) 
 		if media
@@ -184,7 +205,7 @@ mixin pic(i, bg, lazy="lazy", media='576px')
 		+src(i, exp,smpath2, lazy,"",bg) 
 	// /picture
 
-mixin pic2({i, bg, lazy="lazy", media='576px'})
+mixin pic2({i, bg, lazy="lazy" media='576px'})
 	-
 		const smpath2 = "2x"
 		const smpath1 = "1x"
@@ -201,7 +222,7 @@ mixin pic2({i, bg, lazy="lazy", media='576px'})
 			source( srcset=src data-srcset= data  type=`image/${exp}`   )&attributes(attributes)
 		else
 			img(src=src data-src=data, class=(bg=="bg" ? "object-fit-js": null ) alt="")&attributes(attributes)
-	
+
 	// picture
 	picture( class= lazy)&attributes(attributes) 
 		if media 
@@ -214,7 +235,7 @@ mixin pic2({i, bg, lazy="lazy", media='576px'})
 		+src(i, exp,smpath2, lazy,"",bg) 
 	// /picture
 
-//- mixin img( i, bg, lazy="lazy", media='576px')
+//- mixin img( i, bg, lazy="lazy" media='576px')
 //- 	-
 //- 		const smpath2 = "2x"
 //- 		const smpath1 = "1x"
@@ -232,12 +253,12 @@ mixin pic2({i, bg, lazy="lazy", media='576px'})
 //- 		data-src=(data1)   
 //- 		sizes="(max-width: 576px) 0, 100%"
 //- 		data-srcset=(media != 0 ? (data1 + " " + '0, '+ data2 + " 100% " ) : null))&attributes(attributes)
-		//- "img/@1x/real.jpg 1x, img/@2x/real.jpg 2x"
-	//- if media !== 0  
-	//- 	each val2 in [smpath2,smpath1] 
-	//- 	+src(i,exp,val2,lazy)(data-srcset=(val2 == smpath2 ? "(min-width:"+ media+")" : null))
-	//- else 
-	//- 	+src(i,'webp',smpath2+`/webp`,lazy) 
+//- "img/@1x/real.jpg 1x, img/@2x/real.jpg 2x"
+//- if media !== 0  
+//- 	each val2 in [smpath2,smpath1] 
+//- 	+src(i,exp,val2,lazy)(data-srcset=(val2 == smpath2 ? "(min-width:"+ media+")" : null))
+//- else 
+//- 	+src(i,'webp',smpath2+`/webp`,lazy) 
 
 mixin horizontalLine(im,t)
 	+b.horizontalLine&attributes(attributes)
@@ -247,7 +268,7 @@ mixin horizontalLine(im,t)
 			else
 				+icon('heart')
 		+e.text= t
-	
+
 //- /picture with lazy
 
 mixin brands()
@@ -268,8 +289,8 @@ mixin brands()
 //- +pic('','head-img-4',"")
 
 
- 
-		 
+
+
 //- /picture
 	example
 	+piclazy('consult','png','bg')
@@ -279,5 +300,5 @@ mixin brands()
 
 mixin ie11()
 	//- modernizer and for ie11
-	 
+
 	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->

@@ -6,7 +6,15 @@
 		padding-bottom: rem(50);
 	}
 
+	&__item {
+		overflow: hidden;
+	}
 
+	.row {
+		&::before, &::after {
+			display: none;
+		}
+	}
 	&__bottomBlock {
 		display: flex;
 		@include media-breakpoint-up(sm){
@@ -243,3 +251,35 @@
 	@include media-breakpoint-down(xs) {
 	}
 } // end.sCatalog
+
+.newPosition, .salesHit, .stockItem {
+	&::after {
+		content: 'Новинка';
+		width: 100%;
+		background-color: $success;
+		position: absolute;
+		top: rem(30);
+		left: rem(-60);
+		@include media-breakpoint-up(sm) {
+			top: rem(25);
+			left: rem(-80);
+		}
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		transform: rotate(-45deg);
+		color: #fff;
+		z-index: 5;
+		
+	}
+}
+
+.salesHit::after {
+	content: 'Хит продаж';
+	background-color: $primary;
+}
+
+.stockItem::after {
+	content: 'Акция';
+	background-color: $blue;
+}

@@ -5,6 +5,10 @@
 		.section-title {
 			margin-bottom: rem(3);
 		}
+
+		.container {
+			position: relative;
+		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

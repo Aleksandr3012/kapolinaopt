@@ -32,6 +32,12 @@
 		bottom: 0;
 	}
 
+	.row {
+		&::before, &::after {
+			display: none;
+		}
+	}
+
 	&__item {
 		margin-bottom: rem(40);
 		position: relative;

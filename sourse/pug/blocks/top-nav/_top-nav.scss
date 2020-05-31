@@ -11,10 +11,16 @@
 	width: 100%;
 
 
+
 	&.fixed {
 		width: 100vw;
 		bottom: auto;
 		margin-top: 0;
+		background-color: #fff;
+	}
+
+	&.nav-fixed {
+		position: fixed;
 		background-color: #fff;
 	}
 
@@ -67,6 +73,44 @@
 	&__link {
 		color: $body-color;
 		text-decoration: none !important;
+	}
+
+	.dropdown-menu {
+		// box-shadow: 0 10px 20px 5px #fbecf1;
+		@include media-breakpoint-down(md) {
+			display: block;
+		}
+		padding: rem(10);
+		min-width: 240px;
+		margin-top: rem(10);
+		border-color: $primary;
+		li {
+			padding-bottom: rem(15);
+		}
+		a {
+			padding-top: rem(10);
+			padding-bottom: rem(10);
+			font-size: $em-base;
+		}
+	}
+
+	.dropdown {
+		position: relative;
+		&::after {
+			content: '';
+			width: rem(5);
+			height: rem(5);
+			@include a-cent(y);
+			right: rem(-20);
+			background-color: $primary;
+			border-radius: 50%;
+		}
+		a {
+			text-decoration: none !important;
+		}
+		&:hover .dropdown-menu {
+			display: block;
+		}
 	}
 
 	// 
