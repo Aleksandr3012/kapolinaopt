@@ -81,8 +81,10 @@
 			display: block;
 		}
 		padding: rem(10);
+		@include media-breakpoint-up(lg) {
+			top: 27px;
+		}
 		min-width: 240px;
-		margin-top: rem(10);
 		border-color: $primary;
 		li {
 			padding-bottom: rem(15);
@@ -95,7 +97,7 @@
 	}
 
 	.dropdown {
-		position: relative;
+		// position: relative;
 		&::after {
 			content: '';
 			width: rem(5);
@@ -109,7 +111,7 @@
 			text-decoration: none !important;
 		}
 		&:hover .dropdown-menu {
-			display: block;
+			display: block !important;
 		}
 	}
 

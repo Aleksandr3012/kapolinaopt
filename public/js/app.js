@@ -18,6 +18,15 @@ var headerBlockVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sAdvantagesVue = new Vue({
+	el: '#sAdvantages',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
 var sBestsellersVue = new Vue({
 	el: '#sBestsellers',
 	data: {
@@ -29,15 +38,6 @@ var sBestsellersVue = new Vue({
 });
 var sCatalogVue = new Vue({
 	el: '#sCatalog',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
-	created: function created() {},
-	computed: {}
-});
-var sAdvantagesVue = new Vue({
-	el: '#sAdvantages',
 	data: {
 		imgSRc: 'img/'
 	},
