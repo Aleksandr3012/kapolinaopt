@@ -15,6 +15,12 @@
 		}
 	}
 
+	.row {
+		&::before, &::after {
+			display: none;
+		}
+	}
+
 	h2 {
 		letter-spacing: rem(0.6);
 	}
