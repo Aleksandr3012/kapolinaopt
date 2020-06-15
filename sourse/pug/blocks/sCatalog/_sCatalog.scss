@@ -17,13 +17,13 @@
 	}
 	&__bottomBlock {
 		display: flex;
-		@include media-breakpoint-up(sm){
-			justify-content: space-between;
+		justify-content: space-between;
+		@include media-breakpoint-up(md){
 			align-items: flex-end;
 		}
-		@include media-breakpoint-down(sm){
-			flex-direction: column;
-		}
+		// @include media-breakpoint-down(sm){
+		// 	flex-direction: column;
+		// }
 	}
 
 	&__body {

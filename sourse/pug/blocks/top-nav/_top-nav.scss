@@ -94,6 +94,9 @@
 			padding-bottom: rem(10);
 			font-size: $em-base;
 			color: $light;
+			&:hover {
+				color: $body-color;
+			}
 		}
 	}
 
