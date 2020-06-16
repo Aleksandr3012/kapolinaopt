@@ -5,6 +5,7 @@ $h: em(2);
 
 .toggle-menu-mobile {
 	display: block;
+	max-width: 1.5em;
 	height: $h* 12;
 	position: relative;
 	color: $primary;
