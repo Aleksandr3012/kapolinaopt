@@ -87,8 +87,8 @@ var sMightLikeVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sProdItemVue = new Vue({
-	el: '#sProdItem',
+var sPartnersVue = new Vue({
+	el: '#sPartners',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -96,8 +96,8 @@ var sProdItemVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sPartnersVue = new Vue({
-	el: '#sPartners',
+var sProdItemVue = new Vue({
+	el: '#sProdItem',
 	data: {
 		imgSRc: 'img/'
 	},
