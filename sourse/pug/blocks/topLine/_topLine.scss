@@ -83,23 +83,24 @@
 		}
 	}
 
-	.focus-input {
-		padding-right: rem(30);
-		border: $primary;
-		width: rem(150);
-		@include media-breakpoint-up(md) {
-			width: rem(115);
+	.focus {
+		.topLine__input {
+			padding-right: rem(30);
+			border: $primary;
+			width: rem(150);
+			@include media-breakpoint-up(md) {
+				width: rem(115);
+			}
+			@include media-breakpoint-up(xl) {
+				width: rem(180);
+			}
+			background-position: 95% center;
+			margin-right: rem(5);
+			border-color: $primary;
 		}
-		@include media-breakpoint-up(xl) {
-			width: rem(180);
+		.topLine__searchButton {
+			width: rem(40px);
 		}
-		background-position: 95% center;
-		margin-right: rem(5);
-		border-color: $primary;
-	}
-
-	.focus-button {
-		width: rem(40px);
 	}
 
 	&__search {
