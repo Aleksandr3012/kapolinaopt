@@ -21,9 +21,9 @@
 		@include media-breakpoint-up(md){
 			align-items: flex-end;
 		}
-		// @include media-breakpoint-down(sm){
-		// 	flex-direction: column;
-		// }
+		@include media-breakpoint-down(sm){
+			flex-direction: column;
+		}
 	}
 
 	&__body {
@@ -33,6 +33,9 @@
 		}
 	}
 
+	&__stat, &__basket, &__heartAction {
+		flex: 0 0 auto;
+	}
 
 	&__stat,
 	&__basket {
