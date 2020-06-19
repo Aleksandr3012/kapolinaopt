@@ -35,13 +35,14 @@
 
 	&__stat, &__basket, &__heartAction {
 		display: inline-block !important;
-		width: 16px;
-		height: 20px !important;
+		width: 25px;
+		height: 35px !important;
 		height: 100%;
 	}
 
 	&__stat,
 	&__basket {
+		padding: 0;
 		@include mt;
 		&:hover {
 			opacity: 0.5;
@@ -116,18 +117,23 @@
 	&__heartAction {
 		position: relative;
 		display: block;
-		margin: 0 rem(5);
+		margin: 0 3px;
+		width: 25px;
+		// height: 30px;
+		padding: 0;
+		text-align: center;
+		vertical-align: middle;
 
 		img {
 			position: absolute;
-			right: -40%;
-			top: 25%;
+			right: 9%;
+			top: 20%;
 			@include mt;
 		}
 
 		.active {
-			top: 27%;
-			right: -30%;
+			top: 23%;
+			right: 13%;
 			opacity: 0;
 			@include mt;
 		}
