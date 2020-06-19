@@ -64,15 +64,20 @@
 			@include a-cent(y);
 			right: 0;
 			padding: 0;
-			// border: none;
-			// background-color: transparent;
-			width: 0;
+			border: none;
+			background-color: transparent;
+			width: rem(28);
 			height: 100%;
 			display: block;
 		}
 		&:hover input{
 			opacity: 0.5;
 		}
+
+		// &:focus .topLine__search button{
+		// 	width: 30px;
+		// 	padding: 15px;
+		// }
 	}
 
 	&__input {
@@ -81,7 +86,7 @@
 		background-position: 100% 65%;
 		border-color: transparent;
 		@include mt;
-		width: rem(22px);
+		width: rem(60px);
 
 		&:focus {
 			padding-right: rem(30);
@@ -97,10 +102,6 @@
 			margin-right: rem(5);
 			border-color: $primary;
 
-			.topLine__search button{
-				width: 30px;
-				padding: 15px;
-			}
 		}
 	}
 

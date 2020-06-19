@@ -34,7 +34,10 @@
 	}
 
 	&__stat, &__basket, &__heartAction {
-		flex: 0 0 auto;
+		display: inline-block !important;
+		width: 16px;
+		height: 20px !important;
+		height: 100%;
 	}
 
 	&__stat,
@@ -106,9 +109,9 @@
 
 	}
 
-	&__prodAction {
-		display: flex;
-	}
+	// &__prodAction {
+	// 	display: flex;
+	// }
 
 	&__heartAction {
 		position: relative;

@@ -15,8 +15,10 @@ mixin topLine()
 					+e.rightBlock
 						+e.person
 							+e.FORM.search
-								+input('',"search")
-								button(type='submit')
+								+e.input-wrap.form-group
+									+e.INPUT.input.form-control(type='search' name="search")
+									button(type='submit')
+								//- +input('',"search")
 							+e.A.heart(href='#')
 								+icon('heart')
 							+e.A.user(href='#')
