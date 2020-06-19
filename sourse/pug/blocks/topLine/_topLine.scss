@@ -57,27 +57,17 @@
 		box-shadow: none;
 	}
 
-	&__search {
-		position: relative;
-		button {
-			position: absolute;
-			@include a-cent(y);
-			right: 0;
-			padding: 0;
-			border: none;
-			background-color: transparent;
-			width: rem(28);
-			height: 100%;
-			display: block;
-		}
-		&:hover input{
-			opacity: 0.5;
-		}
 
-		// &:focus .topLine__search button{
-		// 	width: 30px;
-		// 	padding: 15px;
-		// }
+	&__searchButton {
+		position: absolute;
+		@include a-cent(y);
+		right: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		width: rem(0);
+		height: 100%;
+		display: block;
 	}
 
 	&__input {
@@ -86,7 +76,11 @@
 		background-position: 100% 65%;
 		border-color: transparent;
 		@include mt;
-		width: rem(60px);
+		width: rem(30px);
+
+		&:hover input{
+			opacity: 0.5;
+		}
 
 		&:focus {
 			padding-right: rem(30);
@@ -101,8 +95,22 @@
 			background-position: 95% center;
 			margin-right: rem(5);
 			border-color: $primary;
-
+			&+.topLine__searchButton {
+				width: rem(40px);
+			}
 		}
+	}
+
+	&__search {
+		position: relative;
+
+		// &:focus .topLine__searchButton+.topLine__input {
+		// }
+
+		// &:focus .topLine__search button{
+		// 	width: 30px;
+		// 	padding: 15px;
+		// }
 	}
 
 	.icon-heart {
