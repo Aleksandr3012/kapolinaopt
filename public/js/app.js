@@ -1,18 +1,19 @@
 "use strict";
 
-var headerBlockVue = new Vue({
-	el: '#headerBlock',
-	data: {
-		imgSRc: 'img/'
-	},
-	created: function created() {},
-	computed: {}
-});
+// .footer scripts goes here
 var header = new Vue({
 	el: '#header',
 	data: {
 		imgSRc: 'img/',
 		a: a
+	},
+	created: function created() {},
+	computed: {}
+});
+var headerBlockVue = new Vue({
+	el: '#headerBlock',
+	data: {
+		imgSRc: 'img/'
 	},
 	created: function created() {},
 	computed: {}
@@ -113,8 +114,8 @@ var sSaleVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sSupplementVue = new Vue({
-	el: '#sSupplement',
+var sWatchedVue = new Vue({
+	el: '#sWatched',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -122,8 +123,8 @@ var sSupplementVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sWatchedVue = new Vue({
-	el: '#sWatched',
+var sSupplementVue = new Vue({
+	el: '#sSupplement',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -138,4 +139,4 @@ var topLineVue = new Vue({
 	},
 	created: function created() {},
 	computed: {}
-}); // .footer scripts goes here
+});
