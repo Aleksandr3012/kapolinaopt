@@ -45,16 +45,16 @@ var sCatalogVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sContentVue = new Vue({
-	el: '#sContent',
+var sContactVue = new Vue({
+	el: '#sContact',
 	data: {
 		imgSRc: 'img/'
 	},
 	created: function created() {},
 	computed: {}
 });
-var sContactVue = new Vue({
-	el: '#sContact',
+var sContentVue = new Vue({
+	el: '#sContent',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -96,6 +96,15 @@ var sPartnersVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
+var sProdItemVue = new Vue({
+	el: '#sProdItem',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
 var sSaleVue = new Vue({
 	el: '#sSale',
 	data: {
@@ -128,15 +137,6 @@ var topLineVue = new Vue({
 	data: {
 		imgSRc: 'img/'
 	},
-	created: function created() {},
-	computed: {}
-});
-var sProdItemVue = new Vue({
-	el: '#sProdItem',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
 	created: function created() {},
 	computed: {}
 });

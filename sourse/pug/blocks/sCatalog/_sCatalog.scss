@@ -16,14 +16,14 @@
 		}
 	}
 	&__bottomBlock {
-		display: flex;
-		justify-content: space-between;
 		@include media-breakpoint-up(md){
+			display: flex;
 			align-items: flex-end;
+			justify-content: space-between;
 		}
-		@include media-breakpoint-down(sm){
-			flex-direction: column;
-		}
+		// @include media-breakpoint-down(sm){
+		// 	flex-direction: column;
+		// }
 	}
 
 	&__body {
