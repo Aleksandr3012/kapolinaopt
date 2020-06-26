@@ -52,7 +52,7 @@
 	}
 
 	&__sortWrap {
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			margin-left: auto;
 			display: flex;
 			justify-content: space-between;
