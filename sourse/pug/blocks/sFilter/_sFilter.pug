@@ -29,13 +29,14 @@ mixin sFilter()
 								option(value="Обычная") Обычная
 								option(value="Круживная") Круживная
 								option(value="Какая-то") Какая-то
-					+e.sorting СОРТИРОВКА:
-					+b.select-group.input-group
-						.custom-select-wrap
-							select.custom-select-js.form-control(name="size")
-								option(value="По новизне") По новизне
-								option(value="По цене") По цене
-								option(value="По популярности") По популярности
-								option(value="По популярности") Lorem ipsum dolor
+					+e.sortWrap
+						+e.sorting СОРТИРОВКА:
+						+b.select-group.input-group
+							.custom-select-wrap
+								select.custom-select-js.form-control(name="size")
+									option(value="По новизне") По новизне
+									option(value="По цене") По цене
+									option(value="По популярности") По популярности
+									option(value="По популярности") Lorem ipsum dolor
 
 	// end sFilter

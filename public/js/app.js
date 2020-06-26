@@ -1,6 +1,5 @@
 "use strict";
 
-// .footer scripts goes here
 var header = new Vue({
 	el: '#header',
 	data: {
@@ -9,7 +8,8 @@ var header = new Vue({
 	},
 	created: function created() {},
 	computed: {}
-});
+}); // .footer scripts goes here
+
 var headerBlockVue = new Vue({
 	el: '#headerBlock',
 	data: {
@@ -18,8 +18,8 @@ var headerBlockVue = new Vue({
 	created: function created() {},
 	computed: {}
 });
-var sAdvantagesVue = new Vue({
-	el: '#sAdvantages',
+var sCatalogVue = new Vue({
+	el: '#sCatalog',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -29,15 +29,6 @@ var sAdvantagesVue = new Vue({
 });
 var sBestsellersVue = new Vue({
 	el: '#sBestsellers',
-	data: {
-		imgSRc: 'img/'
-	},
-	methods: {},
-	created: function created() {},
-	computed: {}
-});
-var sCatalogVue = new Vue({
-	el: '#sCatalog',
 	data: {
 		imgSRc: 'img/'
 	},
@@ -63,6 +54,15 @@ var sContentVue = new Vue({
 });
 var sFilterVue = new Vue({
 	el: '#sFilter',
+	data: {
+		imgSRc: 'img/'
+	},
+	methods: {},
+	created: function created() {},
+	computed: {}
+});
+var sAdvantagesVue = new Vue({
+	el: '#sAdvantages',
 	data: {
 		imgSRc: 'img/'
 	},

@@ -24,9 +24,14 @@
 
 	&__row {
 		display: flex;
+		justify-content: space-between;
 		@include media-breakpoint-down(md) {
 			flex-direction: column;
 		}
+	}
+
+	.select-group {
+		margin-right: auto;
 	}
 
 	.accardion-js {
@@ -46,13 +51,21 @@
 		}
 	}
 
+	&__sortWrap {
+		@include media-breakpoint-up(md) {
+			margin-left: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
 	&__sorting {
-		@include media-breakpoint-up(lg) {
-			margin-right: -3em;
-		}
-		@include media-breakpoint-up(xl) {
-			margin-right: -4em;
-		}
+		// @include media-breakpoint-up(lg) {
+		// 	margin-right: -3em;
+		// }
+		// @include media-breakpoint-up(xl) {
+		// 	margin-right: -4em;
+		// }
 		position: relative;
 		z-index: 5;
 	}
